@@ -1,0 +1,53 @@
+.App {
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  /* height: ; */
+  display: flex;
+}
+
+/* .App-content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+} */
+
+html{
+  height: 100%;
+  margin: 0px;
+}
+
+body{
+  height: 100%;
+  margin: 0px;
+}
+
+#root{
+  width: 100%;
+  height: 100%
+}
+
+@font-face {
+  font-family: 'GothicA1-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.NotePlace{
+  width: 100%;
+  height: 100%;
+  font-family: 'GothicA1-Light';
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p{
+  font-family: 'GothicA1-Light';
+}

@@ -1,0 +1,171 @@
+#Menu-container{
+    width: 211px;
+    height: 100%;
+    background-color: #F8F8F8;
+    border-right: 1px solid #e0e0e0;
+}
+
+#Icon-container{
+    display: flex;
+    justify-content: right;
+    padding-right: 17px;
+    padding-top: 13px;
+    /* font-size: 20px; */
+}
+
+#profile-container-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+
+#profile-img{
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-right: 7px;
+}
+
+#profile-container{
+    display: flex;
+    padding: 6.5px;
+    align-items: center;
+    border-bottom: 0.5px solid #D0D0D0;
+    width: 176px;
+}
+
+#profile-title{
+    font-weight: 800;
+    font-size: 14px;
+}
+
+#profile-email{
+    font-size: 10px;
+    margin-top: 0px;
+}
+
+#search-input{
+    border: none;
+    background-color: #D9D9D9;
+    font-size: 10px;
+    width: 50rem;
+}
+
+#search-input-container{
+    border-radius: 100px;
+    width: 160px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+}
+
+#search-input-container-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+#directory-container-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#directory-container{
+    width: 170px;
+    padding-bottom: 135px;
+    border-bottom: 1px solid #D0D0D0;
+    margin-bottom: 28px;
+}
+
+#directory-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#directory-plus{
+    background-color: inherit;
+    border: none;
+    border-radius: 100px;
+    height: 24px;
+    transition: background-color 0.5s;
+}
+
+#directory-plus:hover{
+    background-color: #D0D0D0;
+}
+
+.folder-button{
+    border: none;
+    background-color: inherit;
+    /* padding: 2.5px, 7px, 2.5px, 0px; */
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.folder-button-container{
+    margin-bottom: 8px;
+}
+
+.folder-caret{
+    padding: 0px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-right: 7px;
+}
+
+.folder-name{
+    font-size: 14px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.etc-icon{
+    display: flex;
+    border: none;
+    background-color: inherit;
+    align-items: center;
+}
+
+#etc-container-parent{
+    margin-left: 17px;
+    margin-bottom: 170px;
+}
+
+.etc-button-container{
+    margin-bottom: 15px;
+}
+
+.etc-text{
+    font-size: 16px;
+}
+
+#back-button{
+    border: none;
+    background-color: inherit;
+    padding: 0px;
+}
+
+#setting-btn{
+    border: none;
+    background-color: inherit;
+    padding: 0px;
+    margin-left: 18px;
+    margin-right: 12px;
+}
+
+#trash-btn{
+    border: none;
+    background-color: inherit;
+    padding: 0px;
+}
