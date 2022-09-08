@@ -1,0 +1,17 @@
+.note-container{
+    width: 400px;
+    height: 600px;
+    /* padding: 48px; */
+    box-shadow: 2px 4px 20px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: scroll;
+}
+
+.note-text-container{
+    padding: 20px;
+    
+    /* overflow: scroll; */
+    font-size: 13px;
+}

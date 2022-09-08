@@ -1,0 +1,23 @@
+.title-container{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.expand-btn{
+    margin-right: 5px;
+}
+
+.title-text{
+    /* font-weight: 600; */
+    font-size: 13px;
+}
+
+.slash{
+    margin-left: 5px;
+    margin-right: 5px;
+}

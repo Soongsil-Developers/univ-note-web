@@ -1,59 +1,34 @@
 import React, { useEffect, useState } from "react";
-import ReactQuill from "react-quill";
-import CustomToolbar from "./CustomToolBar/CustomToolBar";
-import "react-quill/dist/quill.snow.css"
+import EmptyNote from "../../Components/EmptyNote/EmptyNote";
+import Note from "../../Components/Note/Note";
 import "./MainScreen.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 
 const MainScreen = () => {
-    const [text, setText] = useState<string>();
-
-    const handleText = (value: string) => {
-        console.log(value);
-        setText(value);
-        window.localStorage.setItem('text', value);
-    }
+    const [noteContent, setNoteContent] = useState<string>();
 
     useEffect(()=>{
         if(window.localStorage.getItem('text')){
-            console.log(window.localStorage.getItem('text'));
-            setText(window.localStorage.getItem('text'));
+            setNoteContent(window.localStorage.getItem('text'));
         }
-    }, [])
+    }, []);
 
-    const modules = {
-        toolbar: {
-            container: "#toolbar"
-        }
-    }
-
-    const formats = [
-        //'font',
-        'header',
-        'bold', 'italic', 'underline', 'strike', 'blockquote',
-        'list', 'bullet', 'indent',
-        'link', 'image',
-        'align', 'color', 'background',        
-    ];
+    /**
+     * 문제 발견
+     * 화면안에 두개 이상의 Quill을 배치 할 수 없다.
+     * 그래도 이건 해결해 볼 수 있을 듯.
+     */
 
     return(
         <div id="mainscreen-container">
-            <div className="document-container">
-                {/* <button className="full-screen-button">
-                    <FontAwesomeIcon className="full-screen-icon" icon={faUpRightAndDownLeftFromCenter} />
-                </button> */}
-                <CustomToolbar />
-                <ReactQuill
-                placeholder="제목없음"
-                className="react-quill-content"
-                modules={modules} 
-                formats={formats} 
-                theme="snow" 
-                value={text}
-                onChange={
-                    (content, delta, source, editor) => handleText(editor.getHTML())} 
-                />
+            <div className="scrollable">
+                <EmptyNote />
+                {/* <EmptyNote /> */}
+                <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />
+                {/* <Note content={noteContent} folderName="SSU DevCamp" title="헬로" /> */}
+                {/* <Note content={noteContent} folderName="SSU DevCamp" title="헬로" /> */}
+                {/* <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />
+                <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />
+                <Note content={noteContent} folderName="SSU DevCamp" title="헬로" /> */}
             </div>
         </div>
     )
