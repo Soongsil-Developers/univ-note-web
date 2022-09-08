@@ -13,5 +13,8 @@
 .scrollable{
     /* width: 100%; */
     /* overflow-x: scroll; */
-    display: flex;
+    overflow: scroll;
+    white-space: nowrap;
+    display: inline-flex;
+    height: 800px;
 }

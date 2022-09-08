@@ -24,6 +24,9 @@ const MainScreen = () => {
                 <EmptyNote />
                 {/* <EmptyNote /> */}
                 <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />
+                <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />
+                <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />
+                <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />
                 {/* <Note content={noteContent} folderName="SSU DevCamp" title="헬로" /> */}
                 {/* <Note content={noteContent} folderName="SSU DevCamp" title="헬로" /> */}
                 {/* <Note content={noteContent} folderName="SSU DevCamp" title="헬로" />

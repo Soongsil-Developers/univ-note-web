@@ -84,6 +84,7 @@ const EmptyNote = () => {
     * 텍스트를 핸들링함. 지금은 localStorage에 임시로 저장시킴.
     * 현재는 단순하게 저장 구현만 대충 해보자해서 만든거라 키가 하나밖에 없어요
     * 백엔드 개발시 수정
+    * 서버에 데이터를 보낼 때는 저장 트리거가 발동되었을 때만 데이터를 저장시키도록 할 것.
     */
     const handleText = (value: string) => {
         console.log(value);
