@@ -2,13 +2,9 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUndo, faRedo, faCirclePlus, faFile, faTable } from "@fortawesome/free-solid-svg-icons";
 import "./CustomToolBar.css";
+import type { StyleT } from '../../../Utils/Types';
 
-// type propType = {
-//     undo : () => void,
-//     redo : () => void
-// }
-
-const CustomToolbar = () => {
+const CustomToolbar = ({style}: StyleT) => {
     // 드롭다운 메뉴의 초기 display 값
     const [display, setDisplay] = useState<string>('none');
 
@@ -27,8 +23,10 @@ const CustomToolbar = () => {
       }
     }
 
+    
+
     return(
-      <div id="toolbar">
+      <div id="toolbar" style={style}>
         <div className='ql-btn-container'>
           <button className='ql-undo'>
                 <FontAwesomeIcon icon={faUndo} style={{
@@ -63,13 +61,13 @@ const CustomToolbar = () => {
         <button className="ql-bold "></button>
         <button className="ql-italic"></button>
         <select className="ql-background"></select>
-        {/* 적은 텍스트를 하이퍼 링크화 시키는 버튼 <button className="ql-link"></button> */}
+        
         <select className='ql-align'></select>
 
         <button className='ql-blockquote'></button>
         
 
-        {/* 드롭다운 메뉴. 임시로 만든거라 매우 구림 */}
+        
         <div className='ql-insertion'>      
           <div id="menu">
             <ul>

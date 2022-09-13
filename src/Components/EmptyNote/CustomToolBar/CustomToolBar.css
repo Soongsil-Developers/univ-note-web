@@ -4,36 +4,24 @@
 }
 
 .ql-container{
-    /* border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px; */
-    /* border: 0.5px solid #ccc; */
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     resize: both;
 }
 
 #toolbar{
-    /* border-top-left-radius: 8px;
-    border-top-right-radius: 8px; */
-
-    /* border-radius: 8px; */
     display: flex;
     justify-content: center;
-    /* width: 400px; */
     border-radius: 14px;
     border: 0.5px solid #E8E8E8;
-    position: relative;
-    top: -10px;
-    /* z-index: -3; */
-    /* display: none; */
+    position: absolute;
+    top: 3px;
     box-shadow: 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    width: 490px;
 }
 
 .full-screen-icon{
     color: #B4B4B4;
-    /* position: absolute;
-    left: 25px;
-    top: 17.95px; */
 }
 
 .ql-element{
@@ -41,7 +29,6 @@
 }
 
 .ql-btn-container{
-    /* border-left: 1px solid #D0D0D0; */
     border-right: 1px solid #D0D0D0;
     padding-right: 5px;
 }
@@ -60,11 +47,6 @@
     margin-left: 7px;
 }
 
-/* .ql-image{
-    display: flex;
-    width: 100px;
-} */
-
 ul, li{
     list-style: none;
     margin: 0;
@@ -72,14 +54,11 @@ ul, li{
 }
 
 #menu {
-    /* font:bold 16px "malgun gothic"; */
     padding-left: 10px;
     width: 100px;
     height: 20px;
-    /* background: #ccc; */
     color:black;
     line-height: 20px; 
-    /* margin:0 auto; */
     text-align: center;
     display: flex;
     align-items: center;
@@ -87,10 +66,7 @@ ul, li{
 
 #menu > ul > li {
     float:left;
-    /* width:40px; */
-
     position:relative;
-    /* font-weight: 800; */
     display: flex;
     align-items: center;
 }
@@ -105,9 +81,7 @@ button{
 }
 
 #menu > ul > li > ul {
-    /* width:100px; */
     width: 130px;
-    /* display: none; */
     position: absolute;
     font-size:14px;
     background: white;
@@ -121,20 +95,9 @@ button{
 #menu > ul > li > ul > li {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
-
-/* #menu > ul > li > ul:hover {
-    display: block;
-}
-
-#menu > ul > li:hover > ul {
-    display:block;
-} */
 
 #menu > ul > li > ul > li:hover {
-    /* background: orange; */
-    /* display: block; */
     color: rgb(73, 137, 255);
     transition: ease 1s;
 }

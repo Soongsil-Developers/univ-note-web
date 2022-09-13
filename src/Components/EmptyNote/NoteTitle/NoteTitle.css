@@ -2,8 +2,10 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    /* border: 1px solid #ccc; */
-    padding: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    padding-right: 22px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -13,7 +15,6 @@
 }
 
 .title-text{
-    /* font-weight: 600; */
     font-size: 13px;
 }
 

@@ -1,20 +1,18 @@
-#mainscreen-container{
-    /* width: 100%; */
-    /* height: 100%; */
-    width: 80%;
-    padding-left: 75px;
-    padding-top: 52px;
-    padding-bottom: 52px;
+#mainscreen-container {
+    width: 100%;
+    padding: 0px;
     display: flex;
-    /* overflow: scroll; */
-    width: 4000px;
+    align-items: center;
+    overflow-x: auto;
+    margin-left: 75px;
+    margin-bottom: 20px;
+    padding-left: 10px;
 }
 
-.scrollable{
-    /* width: 100%; */
-    /* overflow-x: scroll; */
-    overflow: scroll;
+.scrollable {
+    width: 100%;
     white-space: nowrap;
     display: inline-flex;
-    height: 800px;
+    align-items: center;
+    height: 100%;
 }

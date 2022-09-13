@@ -1,21 +1,12 @@
 .App {
-  /* text-align: center; */
   width: 100%;
   height: 100%;
-  /* height: ; */
   display: flex;
 }
-
-/* .App-content{
-  display: flex;
-  width: 100%;
-  height: 100%;
-} */
 
 html{
   height: 100%;
   margin: 0px;
-  /* font-size: 62.5%; */
 }
 
 body{
@@ -25,7 +16,8 @@ body{
 
 #root{
   width: 100%;
-  height: 100%
+  height: 100%;
+  overflow-y: hidden;
 }
 
 @font-face {
@@ -65,22 +57,14 @@ h6{
   margin: 0;
 }
 
-html{
-  overflow: hidden;
-}
-
 
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
-  /* opacity: 0.5 */
+  height: 6px;
   border-radius: 30px;
 }
 
-/* ::-webkit-scrollbar-corner{
-  width: 6px;
-} */
- 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #dedede;

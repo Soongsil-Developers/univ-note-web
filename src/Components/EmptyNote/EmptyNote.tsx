@@ -5,13 +5,15 @@ import "react-quill/dist/quill.snow.css";
 import "./EmptyNote.css";
 import NoteTitle from './NoteTitle/NoteTitle';
 import NoteBottom from '../NoteBottom/NoteBottom';
+import type { StyleT } from '../../Utils/Types';
 
-const EmptyNote = () => {
+const EmptyNote = ({screen}:any, {style}:StyleT) => {
     // 텍스트. 뭔가를 적을 때마다 html 태그가 string화 되어 이 변수로 들어갑니다.
     const [text, setText] = useState<string>();
 
     // ReactQuill의 참조. 일단 지금은 참조는 시켜놨지만 코드 내에서는 사용하는 곳이 없습니다.
     const rq = useRef<ReactQuill>();
+    const rqContainer = useRef<HTMLDivElement>();
 
     /**
      * 텍스트를 뒤로가기 시키기 (CTRL + Z)
@@ -68,16 +70,18 @@ const EmptyNote = () => {
     /**
      * quill에서 사용하는 포맷들의 배열
      */
-    const formats = [
-        //'font',
-        // 'undo',
-        // 'redo',
-        'header',
-        'bold', 'italic', 'underline', 'strike', 'blockquote',
-        'list', 'bullet', 'indent',
-        'link', 'image',
-        'align', 'color', 'background',        
-    ];
+    const formats = useMemo(() => (
+        [
+            //'font',
+            // 'undo',
+            // 'redo',
+            'header',
+            'bold', 'italic', 'underline', 'strike', 'blockquote',
+            'list', 'bullet', 'indent',
+            'link', 'image',
+            'align', 'color', 'background',        
+        ]
+    ), []);
 
 
     /**  
@@ -98,32 +102,36 @@ const EmptyNote = () => {
         if(window.localStorage.getItem('text')){
             console.log(window.localStorage.getItem('text'));
             setText(window.localStorage.getItem('text'));
-            // undoRedoManager.inputData(text);
         }
     }, []);
 
     return(
         <div>
-            <CustomToolbar />
+            <CustomToolbar style={style} />
             <div className='quill-container'>
                 <NoteTitle folderName={'SSU DevCamp'} title={'개쩌는 제목이란 무엇인가'} />
-                <ReactQuill
-                theme="snow" 
-                className="react-quill-content"
-                modules={modules} 
-                formats={formats} 
-                placeholder={"제목없음"}
-                value={text}
-                ref={rq}
-                onChange={
-                    (content, delta, source, editor) => handleText(editor.getHTML())
-                }
-                // onFocus={()=>setDisplayVal}
-                />
-                <NoteBottom />
+                <div ref={rqContainer}>
+                    <ReactQuill
+                    theme="snow" 
+                    className="react-quill-content"
+                    modules={modules} 
+                    formats={formats} 
+                    placeholder={"제목없음"}
+                    value={text}
+                    ref={rq}
+                    onChange={
+                        (content, delta, source, editor) => handleText(editor.getHTML())
+                    }
+                    style={{
+                        padding: 10
+                    }}
+                    // onFocus={()=>setDisplayVal}
+                    />
+                    <NoteBottom />
+                </div>
             </div>
         </div>
     )
 }
 
-export default EmptyNote
+export default EmptyNote;

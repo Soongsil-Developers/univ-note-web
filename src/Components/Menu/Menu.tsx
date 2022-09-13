@@ -1,7 +1,7 @@
 import React from 'react';
 import './Menu.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { 
+import {
     faAnglesLeft, 
     faMagnifyingGlass, 
     faPlus, 
@@ -11,7 +11,6 @@ import {
     faGear,
     faTrash
 } from "@fortawesome/free-solid-svg-icons";
-
 
 const Menu = () => {
     /**
@@ -54,7 +53,7 @@ const Menu = () => {
                         color: "#909090",
                         fontSize: 10
                     }} />
-                    <input id='search-input' placeholder='검색' />
+                    <input type={"search"} id='search-input' placeholder='검색' />
                 </div>
             </div>
 
