@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Menu from './Components/Menu/Menu';
 import MainScreen from './Screens/MainScreen/MainScreen';
 import './App.css';
+import Login from './Screens/Login/Login';
+import Registor from './Screens/Registor/Registor';
 
 const App = () => {
   /**
@@ -16,6 +18,8 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<MainScreen />}></Route>
+            <Route path='/login' element={<Login />}></Route>
+            <Route path='/regist' element={<Registor />}></Route>
           </Routes>
         </BrowserRouter>
     </div>
