@@ -14,3 +14,12 @@
     padding: 20px;
     font-size: 13px;
 }
+
+.expand-btn{
+    background-color: inherit;
+    border: none;
+}
+
+.title-container{
+    padding: 10px;
+}
