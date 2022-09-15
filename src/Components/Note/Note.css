@@ -1,0 +1,25 @@
+.note-container{
+    box-shadow: 2px 4px 20px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.note-text-container{
+    width: 400px;
+    height: 465px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.expand-btn{
+    background-color: inherit;
+    border: none;
+}
+
+.title-container{
+    padding: 10px;
+}

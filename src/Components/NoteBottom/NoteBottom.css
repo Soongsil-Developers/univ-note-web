@@ -1,0 +1,13 @@
+.bottom{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.bottom-input{
+    width: 85px;
+    border-radius: 15px;
+    background-color: #e0e0e0;
+    border: none;
+    font-size: 12px;
+    padding: 4px 12px 4px 12px;
+}

@@ -1,0 +1,17 @@
+.react-quill-content{
+    height: 465px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+}
+
+.quill-container{
+    box-shadow: 2px 4px 20px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    width: 450px;
+}
+
+.ql-container.ql-snow{
+    border: none;
+    width: 98%;
+}
